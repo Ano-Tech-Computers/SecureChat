@@ -50,6 +50,20 @@
 		<url>${project.url}/issues</url>
 	</issueManagement>
 	
+	<mailingLists>
+		<mailingList>
+			<name>Developer Discussion</name>
+			<archive>${project.issueManagement.url}</archive>
+			<post>${project.issueManagement.url}/new</post>
+			<subscribe>${project.url}/subscription</subscribe>
+			<unsubscribe>${project.url}/subscription</unsubscribe>
+		</mailingList>
+		<mailingList>
+			<name>Organization Forums</name>
+			<archive>http://forums.atc.no/</archive>
+		</mailingList>
+	</mailingLists>
+	
 	<repositories>
 		<repository>
 			<id>bukkit-repo</id>
