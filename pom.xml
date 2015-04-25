@@ -4,10 +4,82 @@
 	<groupId>no.atc.osvein.bukkit.schat</groupId>
 	<artifactId>SecureChat</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
 	<name>SecureChat</name>
 	<url>https://github.com/Ano-Tech-Computers/SecureChat</url>
 	<inceptionYear>2015</inceptionYear>
 	<description>Secure remote chat on Bukkit via SSH</description>
+	
+	<licenses>
+		<license>
+			<name>GNU General Public License, version 2</name>
+			<url>https://www.gnu.org/licenses/gpl-2.0.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	
+	<organization>
+		<name>Ano-Tech Computers</name>
+		<url>http://www.atc.no/</url>
+	</organization>
+	
+	<developers>
+		<developer>
+			<id>osvein</id>
+			<name>Oskar Sveinsen</name>
+			<email>osvein@users.noreply.github.com</email>
+			<url>https://github.com/osvein</url>
+			<organization>${project.organization.name}</organization>
+			<organizationUrl>${project.organization.url}</organizationUrl>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>Europe/Oslo</timezone>
+		</developer>
+	</developers>
+	
+	<scm>
+		<connection>scm:git:${project.url}.git</connection>
+		<developerConnection>${project.scm.connection}</developerConnection>
+		<tag>HEAD</tag>
+		<url>${project.url}</url>
+	</scm>
+	
+	<issueManagement>
+		<system>GitHub</system>
+		<url>${project.url}/issues</url>
+	</issueManagement>
+	
+	<repositories>
+		<repository>
+			<id>bukkit-repo</id>
+			<url>https://repo.bukkit.org/content/groups/public/</url>
+		</repository>
+		<repository>
+			<id>spigot-repo</id>
+			<url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
+		</repository>
+		<repository>
+			<id>apache-repo</id>
+			<url>https://repository.apache.org/content/groups/public/</url>
+		</repository>
+	</repositories>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.bukkit</groupId>
+			<artifactId>bukkit</artifactId>
+			<version>1.7.9-R0.2</version>
+			<type>jar</type>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.sshd</groupId>
+			<artifactId>sshd-core</artifactId>
+			<version>0.14.0</version>
+		</dependency>
+	</dependencies>
+	
 	<build>
 		<resources>
 			<resource>
@@ -38,67 +110,4 @@
 			</plugin>
 		</plugins>
 	</build>
-	<repositories>
-		<repository>
-			<id>bukkit-repo</id>
-			<url>https://repo.bukkit.org/content/groups/public/</url>
-		</repository>
-		<repository>
-			<id>spigot-repo</id>
-			<url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
-		</repository>
-		<repository>
-			<id>apache-repo</id>
-			<url>https://repository.apache.org/content/groups/public/</url>
-		</repository>
-	</repositories>
-	<dependencies>
-		<dependency>
-			<groupId>org.bukkit</groupId>
-			<artifactId>bukkit</artifactId>
-			<version>1.7.9-R0.2</version>
-			<type>jar</type>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.sshd</groupId>
-			<artifactId>sshd-core</artifactId>
-			<version>0.14.0</version>
-		</dependency>
-	</dependencies>
-	<licenses>
-		<license>
-			<name>GNU General Public License, version 2</name>
-			<url>https://www.gnu.org/licenses/gpl-2.0.html</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
-	<organization>
-		<name>Ano-Tech Computers</name>
-		<url>http://www.atc.no/</url>
-	</organization>
-	<developers>
-		<developer>
-			<id>osvein</id>
-			<name>Oskar Sveinsen</name>
-			<email>osvein@users.noreply.github.com</email>
-			<url>https://github.com/osvein</url>
-			<organization>${project.organization.name}</organization>
-			<organizationUrl>${project.organization.url}</organizationUrl>
-			<roles>
-				<role>developer</role>
-			</roles>
-			<timezone>Europe/Oslo</timezone>
-		</developer>
-	</developers>
-	<scm>
-		<connection>scm:git:${project.url}.git</connection>
-		<developerConnection>${project.scm.connection}</developerConnection>
-		<tag>HEAD</tag>
-		<url>${project.url}</url>
-	</scm>
-	<issueManagement>
-		<system>GitHub</system>
-		<url>${project.url}/issues</url>
-	</issueManagement>
 </project>
