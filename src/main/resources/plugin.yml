@@ -3,5 +3,9 @@ version: ${project.version}
 description: Secure remote chat via SSH
 author: osvein
 website: ${project.url}
+
 main: no.atc.osvein.bukkit.schat.SecureChat
 
+commands:
+  schat:
+    usage: /<command>
