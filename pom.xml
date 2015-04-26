@@ -5,6 +5,12 @@
 	<artifactId>SecureChat</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	
+	<properties>
+		<legal.copyright>${project.name} version ${project.version}, Copyright (C) ${project.inceptionYear} ${project.organization.name}</legal.copyright>
+		<legal.shortWarranty>${project.name} comes with ABSOLUTELY NO WARRANTY; for details see LICENSE.</legal.shortWarranty>
+		<legal.shortConditions>${project.name} is free software, and you are welcome to redistribute it under certain conditions; see LICENSE for details.</legal.shortConditions>
+	</properties>
+	
 	<name>SecureChat</name>
 	<url>https://github.com/Ano-Tech-Computers/SecureChat</url>
 	<inceptionYear>2015</inceptionYear>
@@ -13,7 +19,7 @@
 	<licenses>
 		<license>
 			<name>GNU General Public License, version 2</name>
-			<url>https://www.gnu.org/licenses/gpl-2.0.html</url>
+			<url>LICENSE</url>
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
