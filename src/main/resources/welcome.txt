@@ -1,0 +1,3 @@
+${legal.copyright}
+${legal.shortWarranty}
+${legal.shortConditions}
