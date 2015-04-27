@@ -26,9 +26,7 @@ public abstract class PublickeyDatabase implements PublickeyAuthenticator {
      * @param key the {@linkplain java.security.PublicKey public key} to be associated with the user
      * @throws UnsupportedOperationException if the operation is not supported
      */
-    public void addPublicKey(String username, String identifier, PublicKey key) {
-	throw new UnsupportedOperationException();
-    }
+    public abstract void addPublicKey(String username, String identifier, PublicKey key);
     
     /**
      * Dissociates a {@linkplain java.security.PublicKey public key} from a user
@@ -36,9 +34,7 @@ public abstract class PublickeyDatabase implements PublickeyAuthenticator {
      * @param identifier the object used to identify the {@linkplain java.security.PublicKey public key} to be dissociated with the user
      * @throws UnsupportedOperationException if the operation is not supported
      */
-    public void removePublicKey(String username, String identifier) {
-	throw new UnsupportedOperationException();
-    }
+    public abstract void removePublicKey(String username, String identifier);
     
     /**
      * Dissociates all associated {@linkplain java.security.PublicKey public keys} from a user
