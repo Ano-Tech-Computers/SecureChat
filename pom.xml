@@ -15,6 +15,11 @@
 			welcome to redistribute it under certain conditions; see LICENSE for
 			details.</legal.shortConditions>
 	</properties>
+	
+	<modules>
+		<module>securechat-core</module>
+		<module>securechat-auth</module>
+	</modules>
 
 	<name>SecureChat</name>
 	<url>https://github.com/Ano-Tech-Computers/SecureChat</url>
