@@ -25,6 +25,10 @@ import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.concurrent.CopyOnWriteArraySet;
 
 import org.apache.sshd.SshServer;
 import org.apache.sshd.common.Factory;
@@ -43,6 +47,8 @@ public final class SecureChat extends JavaPlugin {
     public static final Charset CHARSET_UNIVERSAL = StandardCharsets.UTF_8;
     
     private final SshServer sshd = SshServer.setUpDefaultServer();
+    
+    private final CopyOnWriteArraySet<ChatPlayer> users = new CopyOnWriteArraySet<ChatPlayer>();
     
     @Override
     public void onEnable() {
@@ -131,6 +137,11 @@ public final class SecureChat extends JavaPlugin {
 	}
 	
 	return false;
+    }
+    
+    // immutable
+    public Collection<ChatPlayer> getUsers() {
+	return Collections.unmodifiableCollection(this.users);
     }
     
     public void setPasswordAuthenticator(PasswordAuthenticator passwordAuthenticator) {
